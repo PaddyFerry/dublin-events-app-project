@@ -8,11 +8,11 @@ class enterScrape(object):
 
 	def getLink(self):
 		linkList = []
-		soup = BeautifulSoup(self.url,'html.parser')
+		soup = BeautifulSoup(self.openLink(),'html.parser')
 		linkDiv = soup.find_all('a',class_ = 'blcklink')
-		urls = 'http://entertainment.ie'
+		parentUrl = self.url.rsplit("/",3)
 		for i in linkDiv:
-			linkList.append(urls + i.get('href'))
+			linkList.append(parentUrl[0]+ i.get('href'))
 		return linkList
 
 	def getInfo(self,url):
@@ -22,9 +22,12 @@ class enterScrape(object):
 			print i.p
 		return linkDiv
 
+	def openLink(self):
+		return urllib.urlopen(self.url).read()
+
 
 def main():
-	url = urllib.urlopen('http://entertainment.ie/music/listings/').read()
+	url ='http://entertainment.ie/music/listings/'
 	scrp = enterScrape(url)
 	links = scrp.getLink()
 	url = urllib.quote(links[0].encode('utf8'), ':/')
