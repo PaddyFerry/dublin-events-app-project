@@ -1,6 +1,8 @@
 import facebook
 from datetime import date
 from datetime import datetime
+from geopy.geocoders import Nominatim
+
 class FacebookScraper(object):
 
 	def __init__(self,graph):
@@ -44,23 +46,23 @@ class FacebookScraper(object):
 		except KeyError:
 			return []
 
+	def get_pub_description(self,pub_id):
+		try:
+			page = self.graph.get_object(id=pub_id,fields="description")
+			return "".join(page["description"].split("\n"))
 
+		except KeyError:
+			return "No description available"
 
-def main():
-	face = FacebookScraper(facebook.GraphAPI(access_token="EAANzGl7D69MBAEzqZB5n2oAFSxzf6YrY3bDgJoXSdmNNn73v4mtwCZCw6qQmuRY78n3QZAmBuyMRePFo4LJCdOE3mCHVcDOZB0otFKjFOZCO3cja9Km4ZAF2eciXlFIKr536h6gLwZBJJZBZCTdBlNKCBrAGEiVzxwonBJgA9bIrO9wZDZD", version="2.11"))
-	page_ids = face.extract_ids("out.txt")
-	for page_id in page_ids:
-		events = face.get_events(page_id)
-		if len(events) != 0:
-			for event in events["data"]:
-				event_date_and_time = face.get_date_and_time(event["start_time"].split("T"))
-				num_days = face.date_diff(event_date_and_time[0])
-				if num_days >= 0 and num_days <= 7:
-					
-					pub_info = face.get_pubs(page_id)
-					location_list = pub_info[1].values()
-					pub_string = pub_info[0]", "+location_list[0]+", "+location_list[2]+", "+location_list[4]+"."
-					print event.get("name"),event.get("id"),event.get("description"),event_date_and_time[0],event_date_and_time[1],event.get("ticket_uri")
+	def get_location(self,pub_id):
+		pub_info = self.get_pubs(pub_id)
+		location_list = pub_info[1].values()
+		x = [x for x in location_list if ("-6") in unicode(x)]
+		y = [y for y in location_list if ("53") in unicode(y)]
+		geolocator = Nominatim()
+		if x and y:
+			loc = geolocator.reverse("{},{}".format(y[0],x[0]))
+			return loc.address
+		else:
+		 return "No address info"
 
-if __name__ == '__main__':
-	main()
