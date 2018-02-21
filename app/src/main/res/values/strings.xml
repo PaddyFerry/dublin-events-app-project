@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dublin Events</string>
+    <string-array name = "Optios">
+        <item>Date</item>
+        <item>Location</item>
+        <item>Venues</item>
+        <item>Pubs</item>
+        <item>Pub Events</item>
+    </string-array>
+</resources>
