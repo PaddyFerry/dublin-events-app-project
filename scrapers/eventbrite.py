@@ -54,14 +54,14 @@ def get_info(url):
     time = (timegroup.find_all('p')[1]).get_text().strip()[:-3]
     date = (html.find('time').get('datetime'))
     tickets = (html.find('div', {'class': 'js-panel-display-price'}).get_text().strip())
-    desc = (html.find('div',{'data-automation':'listing-event-description'}).get_text().strip())
+    desc = (html.find('div', {'data-automation':'listing-event-description'}).get_text().strip())
 
     return {'name': name,
             'location': location,
             'time': time,
             'date': date,
             'tickets': tickets,
-            'desc': desc,
+            'description': desc,
             "scraper": "eventbrite"}
 
 
