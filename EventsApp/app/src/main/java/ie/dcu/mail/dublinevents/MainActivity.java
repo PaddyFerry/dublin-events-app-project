@@ -1,6 +1,7 @@
 package ie.dcu.mail.dublinevents;
 
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
@@ -13,7 +14,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.support.v7.widget.Toolbar;
-import android.widget.ImageView;
 import android.widget.Spinner;
 
 
@@ -21,17 +21,20 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ArrayList<Object> groupItem = new ArrayList<Object>();
-    private ArrayList<Object> childItem = new ArrayList<Object>();
+    private ArrayList<Object> groupItem = new ArrayList<>();
+    private ArrayList<Object> childItem = new ArrayList<>();
+    protected String url="http://159.65.84.145/conn.php";
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ExpandableListView expandbleLis = (ExpandableListView) findViewById(R.id.explistView);
 
         addListenerOnSpinnerItemSelection();
 
+
+        ExpandableListView expandbleLis = (ExpandableListView) findViewById(R.id.explistView);
         expandbleLis.setDividerHeight(2);
         expandbleLis.setGroupIndicator(null);
         expandbleLis.setClickable(true);
@@ -43,9 +46,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Sort By");
 
-        ExpandableListAdapter adapter = new ExpandableListAdapter(groupItem, childItem);
-        adapter.setInflater((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE),this);
-        expandbleLis.setAdapter(adapter);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
+
+        final Downloader d = new Downloader(this, url, expandbleLis);
+        d.execute();
+
+
 
     }
 
@@ -59,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView my_search_view = (SearchView) MenuItemCompat.getActionView(searchItem);
 
+
         ((EditText)my_search_view.findViewById(android.support.v7.appcompat.R.id.search_src_text)).setTextColor(Color.WHITE);
 
         return super.onCreateOptionsMenu(menu);
@@ -70,17 +78,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setGroupData() {
-        ArrayList<String> item1 = new ArrayList<String>();
-        item1.add("BoogyTown");
-        item1.add("12/12/18");
-        item1.add("BooogiePalace");
-        groupItem.add(item1);
 
-        ArrayList<String> item = new ArrayList<String>();
-        item.add("BoogyTown");
-        item.add("12/12/18");
-        item.add("BooogiePalace");
-        groupItem.add(item);
 
         ArrayList<String> item2 = new ArrayList<String>();
         item2.add("BoogyTown");

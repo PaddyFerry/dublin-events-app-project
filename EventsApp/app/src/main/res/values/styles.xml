@@ -16,13 +16,14 @@
     <style name="MySpinnerStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">#FFF</item>
-        <item name="android:background">#181818</item>
+        <item name="android:background">#303030</item>
     </style>
 
-    <style name="ThemeName" parent="@style/Theme.AppCompat">
+    <style name="Search" parent="@style/Theme.AppCompat">
         <item name="actionMenuTextColor">#FFF</item>
         <item name ="android:textColorHint">#FFF</item>
         <item name ="android:textColor">#FFF</item>
+        <item name="searchHintIcon">@string/app_name</item>
     </style>
 
 

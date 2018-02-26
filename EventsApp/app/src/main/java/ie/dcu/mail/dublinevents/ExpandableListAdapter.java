@@ -25,9 +25,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         this.Childtem = childItem;
     }
 
-    public void setInflater(LayoutInflater mInflater, Activity act) {
+    public void setInflater(LayoutInflater mInflater) {
         this.minflater = mInflater;
-        activity = act;
     }
 
     @Override
@@ -92,11 +91,11 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = minflater.inflate(R.layout.list_group, null);
         }
 
-        text = (TextView) convertView.findViewById(R.id.eventName);
+        text = convertView.findViewById(R.id.eventName);
         text.setText(tmpGroup.get(0));
-        text = (TextView) convertView.findViewById(R.id.eventDate);
+        text = convertView.findViewById(R.id.eventDate);
         text.setText(tmpGroup.get(1));
-        text = (TextView) convertView.findViewById(R.id.eventLocation);
+        text = convertView.findViewById(R.id.eventLocation);
         text.setText(tmpGroup.get(2));
         return convertView;
     }

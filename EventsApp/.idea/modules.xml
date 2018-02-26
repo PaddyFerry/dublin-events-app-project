@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EventsApp.iml" filepath="$PROJECT_DIR$/EventsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jboss-common-jdbc-wrapper-src/jboss-common-jdbc-wrapper-src.iml" filepath="$PROJECT_DIR$/jboss-common-jdbc-wrapper-src/jboss-common-jdbc-wrapper-src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-connector-java-5.1.45-bin/mysql-connector-java-5.1.45-bin.iml" filepath="$PROJECT_DIR$/mysql-connector-java-5.1.45-bin/mysql-connector-java-5.1.45-bin.iml" />
+    </modules>
+  </component>
+</project>
