@@ -1,28 +1,28 @@
 package ie.dcu.mail.dublinevents;
 
 import java.util.ArrayList;
-
-import android.app.Activity;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ToggleButton;
 
 @SuppressWarnings("unchecked")
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
-    public ArrayList<String> groupItem, tempChild,tmpGroup;
-    public ArrayList<Object> groupedItem = new ArrayList<Object>();
-    public ArrayList<Object> Childtem = new ArrayList<Object>();
+    public ArrayList<String> tempChild,tmpGroup;
+    public ArrayList<Object> groupedItem = new ArrayList<>();
+    public ArrayList<Object> Childtem = new ArrayList<>();
     public LayoutInflater minflater;
-    public Activity activity;
+    ToggleButton toggleButton;
 
     public ExpandableListAdapter(ArrayList<Object> grList, ArrayList<Object> childItem) {
         groupedItem = grList;
-        this.Childtem = childItem;
+        Childtem = childItem;
     }
 
     public void setInflater(LayoutInflater mInflater) {
@@ -40,16 +40,35 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getChildView(int groupPosition, final int childPosition,
-                             boolean isLastChild, View convertView, ViewGroup parent) {
+    public View getChildView(final int groupPosition, final int childPosition,
+                             final boolean isLastChild, View convertView, ViewGroup parent) {
+
         tempChild = (ArrayList<String>) Childtem.get(groupPosition);
-        TextView text = null;
+        TextView text;
         if (convertView == null) {
             convertView = minflater.inflate(R.layout.list_item, null);
         }
-        text = (TextView) convertView.findViewById(R.id.lstitem);
+
+        text = convertView.findViewById(R.id.lstitem);
         text.setText(tempChild.get(childPosition));
+
+        final Button button = convertView.findViewById(R.id.favourite);
+
+        button.setOnClickListener(
+                new View.OnClickListener(){
+                    public void onClick(View v){
+                        addToFavourites(v);
+                    }
+                }
+        );
+
+
+
         return convertView;
+    }
+
+    public void addToFavourites(View v){
+        
     }
 
     @Override
@@ -86,7 +105,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
         tmpGroup = (ArrayList<String>) groupedItem.get(groupPosition);
-        TextView text = null;
+        TextView text;
         if (convertView == null) {
             convertView = minflater.inflate(R.layout.list_group, null);
         }
@@ -97,17 +116,20 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         text.setText(tmpGroup.get(1));
         text = convertView.findViewById(R.id.eventLocation);
         text.setText(tmpGroup.get(2));
+        text = convertView.findViewById(R.id.rating);
+        text.setText(tmpGroup.get(3));
+
         return convertView;
     }
 
     @Override
-    public boolean hasStableIds() {
-        return false;
-    }
+    public boolean hasStableIds() {return false;}
 
     @Override
     public boolean isChildSelectable(int groupPosition, int childPosition) {
-        return false;
+        return true;
     }
+
+
 
 }
