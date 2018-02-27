@@ -53,7 +53,7 @@ def time_date(test):
     if len(test) == 6:
         date = test[1:4]
         time = test[-1]
-        newDate = str(date[2]) + "-"+ str(convMonth(date[1]))+"-" + str(date[0])
+        newDate = str(date[2]) + "-" + str(convMonth(date[1]))+"-" + str(date[0])
         return convTime(time), newDate
     else:
         date = test[1:4]
