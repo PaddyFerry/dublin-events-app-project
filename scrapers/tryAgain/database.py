@@ -7,6 +7,7 @@ from time import sleep
 
 
 class Database(object):
+    """Class for taking scraper returns and working with the database accordingly"""
     def __init__(self, user, password, host, database):
         self.user = user
         self.password = password
@@ -105,13 +106,13 @@ class Database(object):
         self.add_to_db_event(event)
 
 
-# db = Database("test", "1234", "159.65.84.145", "app")
-# with db:
-#     for event in entertainment.get_info():
-#         try:
-#             db.check_add_event(event)
-#         except UnicodeEncodeError as err:
-#             print("Error : {}".format(err))
-#             print("ERROR WITH", event)
-#         print ("________________________________________")
-#     # db.check_add_venue("The Grand Social")
+db = Database("test", "1234", "159.65.84.145", "app")
+with db:
+    for event in entertainment.get_info():
+        try:
+            db.check_add_event(event)
+        except UnicodeEncodeError as err:
+            print("Error : {}".format(err))
+            print("ERROR WITH", event)
+        print ("________________________________________")
+    # db.check_add_venue("The Grand Social")

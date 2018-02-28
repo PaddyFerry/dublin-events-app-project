@@ -44,7 +44,7 @@ def get_links():
     my_url = "http://entertainment.ie/music/listings/"
     page_raw = requests.get(my_url)
     page_html = Soup(page_raw.content, 'html5lib')
-    for i in range(1):
+    for i in range(3):
         for link in page_html.find_all("a", {"class": "blcklink"})[1:]:
             # print "http://www.entertainment.ie" + link.get('href')
             yield "http://www.entertainment.ie" + link.get('href')
