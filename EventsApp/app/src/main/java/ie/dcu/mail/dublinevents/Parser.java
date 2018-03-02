@@ -3,35 +3,30 @@ package ie.dcu.mail.dublinevents;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
 import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Parser extends AsyncTask<Void,Integer,Integer> {
 
-    Context c;
-    ExpandableListView expl;
-    String data;
+    private Context c;
+    private ExpandableListView expl;
+    private String data;
+    private String pType;
 
     private ArrayList<Object> group = new ArrayList<>();
     private ArrayList<Object> child = new ArrayList<>();
     ProgressDialog pd;
 
-    public Parser(Context c, String data, ExpandableListView expl) {
+     public Parser(Context c, String data, ExpandableListView expl,String pType) {
         this.c = c;
         this.data = data;
         this.expl = expl;
+        this.pType = pType;
     }
 
     @Override
@@ -46,8 +41,13 @@ public class Parser extends AsyncTask<Void,Integer,Integer> {
 
     @Override
     protected Integer doInBackground(Void... params) {
+         if(pType.equals("event")) {
+             return this.parseEvent();
+         }
+         else{
+             return this.parseVenue();
+         }
 
-        return this.parse();
     }
 
     @Override
@@ -74,7 +74,7 @@ public class Parser extends AsyncTask<Void,Integer,Integer> {
     }
 
     //PARSE RECEIVED DATA
-    private int parse()
+    private int parseEvent()
     {
         try
         {
@@ -82,7 +82,7 @@ public class Parser extends AsyncTask<Void,Integer,Integer> {
             JSONArray ja=new JSONArray(data);
 
             //CREATE JO OBJ TO HOLD A SINGLE ITEM
-            JSONObject jo=null;
+            JSONObject jo;
 
             group.clear();
 
@@ -91,16 +91,62 @@ public class Parser extends AsyncTask<Void,Integer,Integer> {
             {
                 jo=ja.getJSONObject(i);
 
-                //RETRIOEVE NAME
+                //Retrieve NAME,Address,Phone number
                 String name=jo.getString("name");
-                String address=jo.getString("address");
-                String phone =jo.getString("phone");
+                String address=jo.getString("location");
+                String datetime =jo.getString("datetime");
 
                 //ADD IT TO OUR ARRAYLIST
                 ArrayList<String> item = new ArrayList<>();
                 item.add(name);
                 item.add(address);
-                item.add(phone);
+                item.add(datetime);
+                group.add(item);
+
+                String event = jo.getString("description");
+                ArrayList<String> childItem = new ArrayList<>();
+                childItem.add(event);
+                child.add(childItem);
+            }
+
+            return 1;
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return 0;
+    }
+
+    private int parseVenue()
+    {
+        try
+        {
+            //ADD THAT DATA TO JSON ARRAY FIRST
+            JSONArray ja=new JSONArray(data);
+
+            //CREATE JO OBJ TO HOLD A SINGLE ITEM
+            JSONObject jo;
+
+            group.clear();
+
+            //LOOP THRU ARRAY
+            for(int i=0;i<ja.length();i++)
+            {
+                jo=ja.getJSONObject(i);
+
+                //Retrieve NAME,Address,Phone number
+                String name=jo.getString("name");
+                String address=jo.getString("address");
+                String cat =jo.getString("category");
+                String rating = jo.getString("rating");
+
+                //ADD IT TO OUR ARRAYLIST
+                ArrayList<String> item = new ArrayList<>();
+                item.add(name);
+                item.add(address);
+                item.add(cat);
+                item.add(rating+"/5");
                 group.add(item);
 
                 String event = jo.getString("name");

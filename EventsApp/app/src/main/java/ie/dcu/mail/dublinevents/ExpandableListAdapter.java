@@ -1,15 +1,14 @@
 package ie.dcu.mail.dublinevents;
 
 import java.util.ArrayList;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.TextView;
-import android.widget.ToggleButton;
+import android.widget.Toast;
+
 
 @SuppressWarnings("unchecked")
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
@@ -18,7 +17,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     public ArrayList<Object> groupedItem = new ArrayList<>();
     public ArrayList<Object> Childtem = new ArrayList<>();
     public LayoutInflater minflater;
-    ToggleButton toggleButton;
+
 
     public ExpandableListAdapter(ArrayList<Object> grList, ArrayList<Object> childItem) {
         groupedItem = grList;
@@ -43,32 +42,33 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     public View getChildView(final int groupPosition, final int childPosition,
                              final boolean isLastChild, View convertView, ViewGroup parent) {
 
+        final ArrayList<String> parentGroup = (ArrayList<String>) groupedItem.get(groupPosition);
         tempChild = (ArrayList<String>) Childtem.get(groupPosition);
         TextView text;
+
         if (convertView == null) {
             convertView = minflater.inflate(R.layout.list_item, null);
         }
 
         text = convertView.findViewById(R.id.lstitem);
         text.setText(tempChild.get(childPosition));
-
         final Button button = convertView.findViewById(R.id.favourite);
+        final View conv = convertView;
 
-        button.setOnClickListener(
-                new View.OnClickListener(){
-                    public void onClick(View v){
-                        addToFavourites(v);
-                    }
-                }
-        );
+        button.setOnClickListener(new View.OnClickListener() {
 
-
-
+            @Override
+            public void onClick(View v) {
+                addProduct(parentGroup.get(0),parentGroup.get(1),parentGroup.get(2),conv);
+            }
+        });
         return convertView;
     }
 
-    public void addToFavourites(View v){
-        
+
+    public void addProduct(String a,String b,String c,View v){
+        SqliteDBHandler dbHandler = new SqliteDBHandler(MainActivity.getContext(),null,null,10);
+        dbHandler.addVenue(a,b,c);
     }
 
     @Override
@@ -116,8 +116,11 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         text.setText(tmpGroup.get(1));
         text = convertView.findViewById(R.id.eventLocation);
         text.setText(tmpGroup.get(2));
-        text = convertView.findViewById(R.id.rating);
-        text.setText(tmpGroup.get(3));
+        if (tmpGroup.size() > 3)
+        {
+            text = convertView.findViewById(R.id.rating);
+            text.setText(tmpGroup.get(3));
+        }
 
         return convertView;
     }
