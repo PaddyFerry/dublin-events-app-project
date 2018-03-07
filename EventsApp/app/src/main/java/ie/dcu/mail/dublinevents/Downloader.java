@@ -2,31 +2,37 @@ package ie.dcu.mail.dublinevents;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.Toast;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Downloader extends AsyncTask<Void,Integer,String> {
 
-    Context c;
-    String address;
-    ExpandableListView expl;
+    private Context c;
+    private String address;
+    private ExpandableListView expl;
+    private String pType;
 
     ProgressDialog pd;
 
-    public Downloader(Context c, String address, ExpandableListView expl) {
+    public Downloader(Context c, String address, ExpandableListView expl,String pType) {
         this.c = c;
         this.address = address;
         this.expl = expl;
+        this.pType = pType;
     }
 
     //B4 JOB STARTS
@@ -42,19 +48,18 @@ public class Downloader extends AsyncTask<Void,Integer,String> {
 
     @Override
     protected String doInBackground(Void... params) {
-        String data=downloadData();
-        return data;
+        return downloadData();
     }
 
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
 
-        pd.dismiss();;
+        pd.dismiss();
 
         if(s != null)
         {
-            Parser p=new Parser(c,s,expl);
+            Parser p=new Parser(c,s,expl,pType);
             p.execute();
 
         }else
@@ -67,16 +72,15 @@ public class Downloader extends AsyncTask<Void,Integer,String> {
     {
         //connect and get a stream
         InputStream is=null;
-        String line =null;
+        String line;
 
         try {
-            URL url=new URL(address);
-            HttpURLConnection con= (HttpURLConnection) url.openConnection();
-            is=new BufferedInputStream(con.getInputStream());
+            URL url = new URL(address);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-            BufferedReader br=new BufferedReader(new InputStreamReader(is));
-
-            StringBuffer sb=new StringBuffer();
+            is = new BufferedInputStream(con.getInputStream());
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            StringBuffer sb = new StringBuffer();
 
             if(br != null) {
 

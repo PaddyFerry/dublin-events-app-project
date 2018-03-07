@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
 
@@ -26,11 +25,11 @@
             <ImageView
                 android:id="@+id/eventImage"
                 android:layout_width="80dp"
-                android:layout_height="84dp"
+                android:layout_height="match_parent"
                 android:adjustViewBounds="false"
-                android:contentDescription="TODO"
+                android:contentDescription="Container"
                 android:cropToPadding="false"
-                android:paddingTop="5dp"
+                android:padding="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/linearLayout"
                 app:layout_constraintStart_toStartOf="parent"
@@ -41,19 +40,37 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/eventName"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:paddingTop="5dp"
-                android:text="Event Name"
-                android:textColor="@android:color/background_light"
-                android:textSize="25dp" />
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/eventName"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Event Name"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/eventDate"
@@ -62,7 +79,7 @@
                 android:layout_gravity="center"
                 android:text="location"
                 android:textColor="@android:color/white"
-                android:textSize="15dp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/eventLocation"
@@ -71,17 +88,29 @@
                 android:layout_gravity="center"
                 android:text="Date"
                 android:textColor="@android:color/white"
-                android:textSize="15dp" />
+                android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="More Info"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"
-                android:drawableBottom="@drawable/mr_group_expand"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="More Info"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/mr_group_expand" />
+
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
