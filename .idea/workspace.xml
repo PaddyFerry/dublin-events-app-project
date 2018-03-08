@@ -2,9 +2,479 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="292af2a5-ad9d-4113-98d7-2dff4f1b6b81" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ghostdriver.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/checkFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/entertainment.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/event.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/eventClass.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/eventbrite.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/events.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookScrape/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookScrape/faceScrape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookScrape/findPubs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/activate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/activate.csh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/activate.fish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/activate_this.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/easy_install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/easy_install-2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/pip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/pip2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/pip2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/python" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/python-config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/python2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/python2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/bin/wheel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/include/python2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/UserDict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/_abcoll.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/_weakrefset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/abc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/codecs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/copy_reg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/distutils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/distutils/distutils.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/encodings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/fnmatch.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/genericpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/lib-dynload" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/linecache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/locale.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/no-global-site-packages.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/ntpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/orig-prefix.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/os.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/posixpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/re.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/easy_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip-9.0.1.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/appdirs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/_cmd.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/adapter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/controller.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/filewrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/serialize.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/wrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/colorama/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/colorama/ansi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/colorama/ansitowin32.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/colorama/initialise.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/colorama/win32.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/colorama/winterm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/misc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/shutil.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/tarfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/database.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/manifest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/resources.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/scripts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/t32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/t64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/w32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/w64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/distro.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_ihatexml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_inputstream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_tokenizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/datrie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/inject_meta_charset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/optionaltags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/whitespace.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/html5parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/genshi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/sax.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/genshi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/lockfile/linklockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/lockfile/mkdirlockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/lockfile/pidlockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/lockfile/sqlitelockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/lockfile/symlinklockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/ordereddict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/__about__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/_structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/requirements.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/packaging/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/progress/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/progress/bar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/progress/counter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/progress/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/progress/spinner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/re-vendor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/adapters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/auth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/cacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/certs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/cookies.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/hooks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/big5freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/big5prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/chardetect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/chardistribution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/charsetgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/charsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/codingstatemachine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/cp949prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/escprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/escsm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/eucjpprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euckrfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euckrprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euctwfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euctwprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/gb2312freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/gb2312prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/hebrewprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/jisfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/jpcntx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langbulgarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langcyrillicmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langgreekmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langhebrewmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langhungarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langthaimodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/latin1prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/mbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/mbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/mbcssm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/sbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/sbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/sjisprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/universaldetector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/utf8prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/_collections.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/connectionpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/appengine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/ntlmpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/socks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/filepost.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/ordered_dict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/poolmanager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/retry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/timeout.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/url.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/requests/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/retrying.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/webencodings/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/webencodings/labels.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/webencodings/mklabels.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/_vendor/webencodings/x_user_defined.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/basecommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/baseparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/cmdoptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/check.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/completion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/freeze.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/hash.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/help.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/search.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/show.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/uninstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/commands/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/compat/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/compat/dictconfig.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/locations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/models/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/models/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/operations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/operations/check.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/operations/freeze.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/pep425tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/req/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/req/req_file.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/req/req_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/req/req_set.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/req/req_uninstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/appdirs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/build.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/deprecation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/encoding.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/filesystem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/glibc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/hashes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/logging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/outdated.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/packaging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/setuptools_build.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/utils/ui.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/vcs/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/vcs/bazaar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/vcs/git.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/vcs/mercurial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/vcs/subversion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pip/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/appdirs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__about__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/requirements.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/specifiers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/_vendor/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/extern/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/pkg_resources/py31compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools-38.4.0.dist-info/zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/archive_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/build_meta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/cli-32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/cli-64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/cli.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/alias.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/bdist_egg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/bdist_wininst.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/build_clib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/build_ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/build_py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/develop.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/dist_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/easy_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/egg_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/install_egg_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/install_lib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/install_scripts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/launcher manifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/py36compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/register.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/rotate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/saveopts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/sdist.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/setopt.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/upload.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/command/upload_docs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/dep_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/depends.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/dist.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/extension.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/extern/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/glibc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/glob.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/gui-32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/gui-64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/gui.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/launch.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/lib2to3_ex.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/monkey.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/msvc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/namespaces.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/package_index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/pep425tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/py27compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/py31compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/py33compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/py36compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/sandbox.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/script (dev).tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/script.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/site-patch.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/ssl_support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/unicode_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/setuptools/windows_support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel-0.30.0.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/archive.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/bdist_wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/decorator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/egg2wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/metadata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/paths.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/pep425tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/pkginfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/signatures/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/signatures/djbec.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/signatures/ed25519py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/signatures/keys.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/tool/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site-packages/wheel/wininst2wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/site.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/sre.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/sre_compile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/sre_constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/sre_parse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/stat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/types.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/lib/python2.7/warnings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/local/bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/local/include" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/local/lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/pip-selfcheck.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/CacheControl-0.11.5-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/chardet-2.3.0-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/colorama-0.3.7-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/distlib-0.2.2-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/html5lib-0.999-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/ipaddress-0.0.0-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/lockfile-0.12.2-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/packaging-16.6-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/pip-8.1.1-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/progress-1.2-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/pyparsing-2.0.3-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/requests-2.9.1-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/retrying-1.3.3-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/setuptools-20.7.0-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/six-1.10.0-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/urllib3-1.13.1-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/facebookenv/share/python-wheels/wheel-0.29.0-py2.py3-none-any.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/out.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/runner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/runner2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/sqliteDB/.cache/v/cache/lastfailed" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/sqliteDB/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/sqliteDB/event.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/sqliteDB/sqliteDB.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/test.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/fuck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/pub.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/test.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapers/tryAgain/database.py" afterPath="$PROJECT_DIR$/scrapers/tryAgain/database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapers/tryAgain/entertainment.py" afterPath="$PROJECT_DIR$/scrapers/tryAgain/entertainment.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapers/tryAgain/googleIt.py" afterPath="$PROJECT_DIR$/scrapers/tryAgain/googleIt.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +492,7 @@
       <file leaf-file-name="cursor_cext.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/mysql/connector/cursor_cext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6409">
+            <state relative-caret-position="0">
               <caret line="393" column="8" lean-forward="false" selection-start-line="393" selection-start-column="8" selection-end-line="393" selection-end-column="8" />
               <folding />
             </state>
@@ -32,8 +502,8 @@
       <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="116" column="58" lean-forward="false" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
+            <state relative-caret-position="1856">
+              <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -41,25 +511,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entertainment.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="84" lean-forward="false" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventbrite.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubs.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/pubs.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7191">
+              <caret line="423" column="9" lean-forward="false" selection-start-line="423" selection-start-column="9" selection-end-line="423" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entertainment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/entertainment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="50" column="66" lean-forward="false" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1519752124616" expanded="true" signature="314391:431973" ph="..." />
+                <element signature="e#85#1309#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,6 +563,11 @@
               <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="147" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
+                <marker date="1520533891916" expanded="true" signature="83:1035" ph="..." />
+                <marker date="1520533891916" expanded="true" signature="526:659" ph="..." />
+                <marker date="1520533891916" expanded="true" signature="688:748" ph="..." />
+                <marker date="1520533891916" expanded="true" signature="758:808" ph="..." />
+                <marker date="1520533891916" expanded="true" signature="821:1034" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,10 +593,24 @@
       <find>brady</find>
       <find>fibber</find>
       <find>min</find>
-      <find>print</find>
       <find>not e</find>
       <find>added to</find>
       <find>ERROR WITH</find>
+      <find>place</find>
+      <find>events</find>
+      <find>phone</find>
+      <find>arts</find>
+      <find>eventbr</find>
+      <find>ADDED</find>
+      <find>retu</find>
+      <find>name</find>
+      <find>break</find>
+      <find>______________________________________________</find>
+      <find>vname</find>
+      <find>print</find>
+      <find>vlink</find>
+      <find>urls</find>
+      <find>alex and</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,7 +630,6 @@
         <option value="$PROJECT_DIR$/scrapers/facebookScrape/out.txt" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/gettingPubs.ipynb" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/pub.py" />
-        <option value="$PROJECT_DIR$/scrapers/eventbrite.py" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/pubs.json" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/dbEntry.py" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/event.py" />
@@ -130,8 +639,12 @@
         <option value="$PROJECT_DIR$/scrapers/tryAgain/googleIt.py" />
         <option value="$PROJECT_DIR$/scrapers/entertainment.py" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/check.py" />
+        <option value="$PROJECT_DIR$/scrapers/tryAgain/pubs.txt" />
+        <option value="$PROJECT_DIR$/scrapers/eventbrite.py" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/entertainment.py" />
+        <option value="$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/database.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -156,6 +669,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,34 +715,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2018-CA326-dbaranauskas-dublinevents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2018-CA326-dbaranauskas-dublinevents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scrapers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebookenv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Patrick\Desktop\3Y Project\git\2018-CA326-dbaranauskas-dublinevents\scrapers\tryAgain" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,43 +741,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.database">
-    <configuration default="false" name="getThosePubs" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapers/tryAgain" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="2018-CA326-dbaranauskas-dublinevents" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapers/tryAgain/getThosePubs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="googleIt" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapers/tryAgain" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="2018-CA326-dbaranauskas-dublinevents" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapers/tryAgain/googleIt.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.setup">
     <configuration default="false" name="entertainment" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -327,6 +791,42 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="2018-CA326-dbaranauskas-dublinevents" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapers/tryAgain/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="eventbrite" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapers/tryAgain" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="2018-CA326-dbaranauskas-dublinevents" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="2018-CA326-dbaranauskas-dublinevents" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,19 +898,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.getThosePubs" />
-      <item index="1" class="java.lang.String" itemvalue="Python.googleIt" />
-      <item index="2" class="java.lang.String" itemvalue="Python.entertainment" />
-      <item index="3" class="java.lang.String" itemvalue="Python.check" />
-      <item index="4" class="java.lang.String" itemvalue="Python.database" />
+      <item index="0" class="java.lang.String" itemvalue="Python.entertainment" />
+      <item index="1" class="java.lang.String" itemvalue="Python.check" />
+      <item index="2" class="java.lang.String" itemvalue="Python.database" />
+      <item index="3" class="java.lang.String" itemvalue="Python.eventbrite" />
+      <item index="4" class="java.lang.String" itemvalue="Python.setup" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.database" />
-        <item index="1" class="java.lang.String" itemvalue="Python.check" />
+        <item index="0" class="java.lang.String" itemvalue="Python.setup" />
+        <item index="1" class="java.lang.String" itemvalue="Python.database" />
         <item index="2" class="java.lang.String" itemvalue="Python.entertainment" />
-        <item index="3" class="java.lang.String" itemvalue="Python.googleIt" />
-        <item index="4" class="java.lang.String" itemvalue="Python.getThosePubs" />
+        <item index="3" class="java.lang.String" itemvalue="Python.eventbrite" />
+        <item index="4" class="java.lang.String" itemvalue="Python.check" />
       </list>
     </recent_temporary>
   </component>
@@ -439,7 +939,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519756971459</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created database class for handling scraper returns">
+      <created>1519798366952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1519798366952</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -453,12 +960,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.88840735" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.88840735" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -485,44 +991,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapers/runner.py</url>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrapers/sqliteDB/sqliteDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/sqliteDB/sqliteDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/sqliteDB/sqliteDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -647,13 +1120,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/this.html" />
     <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/dbEntry.py" />
-    <entry file="file://$PROJECT_DIR$/scrapers/eventbrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/eventClass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -687,13 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="50909" lean-forward="false" selection-start-line="0" selection-start-column="50909" selection-end-line="0" selection-end-column="50909" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/pub.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -715,18 +1174,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/fuck.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1360" lean-forward="false" selection-start-line="0" selection-start-column="1360" selection-end-line="0" selection-end-column="1360" />
         </state>
       </provider>
     </entry>
@@ -750,6 +1201,11 @@
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="147" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+            <marker date="1520533891916" expanded="true" signature="83:1035" ph="..." />
+            <marker date="1520533891916" expanded="true" signature="526:659" ph="..." />
+            <marker date="1520533891916" expanded="true" signature="688:748" ph="..." />
+            <marker date="1520533891916" expanded="true" signature="758:808" ph="..." />
+            <marker date="1520533891916" expanded="true" signature="821:1034" ph="..." />
           </folding>
         </state>
       </provider>
@@ -786,38 +1242,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1519752124616" expanded="true" signature="314391:431973" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/check.py" />
+    <entry file="file://$PROJECT_DIR$/scrapers/eventbrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="56" column="49" lean-forward="false" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/mysql/connector/cursor_cext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6409">
+        <state relative-caret-position="0">
           <caret line="393" column="8" lean-forward="false" selection-start-line="393" selection-start-column="8" selection-end-line="393" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/pubs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7191">
+          <caret line="423" column="9" lean-forward="false" selection-start-line="423" selection-start-column="9" selection-end-line="423" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="56296" lean-forward="false" selection-start-line="0" selection-start-column="56292" selection-end-line="0" selection-end-column="56296" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/entertainment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="50" column="66" lean-forward="false" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#85#1309#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/fuck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="0" column="1360" lean-forward="false" selection-start-line="0" selection-start-column="1360" selection-end-line="0" selection-end-column="1360" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="116" column="58" lean-forward="false" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
+        <state relative-caret-position="1856">
+          <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/entertainment.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="84" lean-forward="false" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>

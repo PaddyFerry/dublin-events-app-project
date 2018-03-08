@@ -6,7 +6,7 @@ def google_it(place):
     url = "https://www.google.ie/search?q="
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
     raw = re.get(url + place + "+dublin" + "&cr=IE")
-    with open("fuck.html", "w") as f:
+    with open("test_google.html", "w") as f:
         f.write(raw.content)
     html = Soup(raw.content, "html5lib")
     result = html.find("div", {"class": "_uXc hp-xpdbox"})

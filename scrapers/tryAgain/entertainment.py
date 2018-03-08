@@ -44,12 +44,13 @@ def get_links():
     my_url = "http://entertainment.ie/music/listings/"
     page_raw = requests.get(my_url)
     page_html = Soup(page_raw.content, 'html5lib')
-    for i in range(3):
+    next_pages = page_html.find("span", {"class": "paginglinks"})
+    for page in next_pages.find_all("a")[:3]:
         for link in page_html.find_all("a", {"class": "blcklink"})[1:]:
             # print "http://www.entertainment.ie" + link.get('href')
             yield "http://www.entertainment.ie" + link.get('href')
         print("______________________________________________")
-        my_url = "http://www.entertainment.ie" + page_html.find("a", {"title": "Next page of events"}).get("href")
+        my_url = "http://entertainment.ie" + page.get("href").replace(" ", "%20") # page_html.find("a", {"title": "Next page of events"}).get("href")
         page_raw = requests.get(my_url)
         page_html = Soup(page_raw.content, 'html5lib')
 
@@ -75,11 +76,14 @@ def get_info():
             desc = desc.text.strip()
         else:
             desc = ""
-        yield name.text, location.text, tickets, desc, datetime
+        link = ""
+        yield name.text, location.text, tickets, desc, datetime, link
 
 
 
-
+# for l in  get_info():
+#     print l
+#     break
 # YYYY-MM-DD HH:MM
 
 
