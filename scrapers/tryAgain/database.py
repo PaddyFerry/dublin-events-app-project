@@ -3,8 +3,9 @@ from unidecode import unidecode
 import requests as re
 import mysql.connector
 import entertainment
-import eventbrite
 from time import sleep
+import eventbrite
+
 
 
 class Database(object):
