@@ -102,7 +102,7 @@ A user can favourite events or pubs and it is then added to the sqlite database 
 device, this allows users to quickly add and remove events or pubs from their favourites if
 they wish to do so.
 
-<img src="tech_images/Untitled Diagram.jpg">
+<img src="tech_images/Diagram.jpg">
 
 ## 4. PROBLEMS AND RESOLUTIONS
 
