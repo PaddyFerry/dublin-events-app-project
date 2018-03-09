@@ -290,6 +290,7 @@ events​.
 # 4 System Architecture
 
 ### 4.1 System Architecture Diagram ​ 1 ​
+<img src="func_images/img1.jpg">
 
 **Fig 4.
 Fig 4.1** ​illustrates the architecture of the application. The diagram shows how the four
@@ -332,6 +333,7 @@ pleasing way.
 # 5 High Level Design
 
 ### 5.1 Data Flow Diagram ​ 1 ​
+<img src="func_images/img2.png">
 
 **Fig 5.1-DFD**
 
@@ -347,6 +349,7 @@ can choose to view it.
 
 
 # 6 Preliminary Schedule
+<img src="func_images/img3.png">
 
 **Fig 6.1-Gantt Chart
 Functional Spec -** ​We hope to complete the functional specification before the due
