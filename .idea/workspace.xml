@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="292af2a5-ad9d-4113-98d7-2dff4f1b6b81" name="Default" comment="added facebook scraper">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/facebookScrape/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/facebookenv/lib/python2.7/no-global-site-packages.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/checkFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/entertainment.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/event.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/eventbrite.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/events.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/out.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/runner.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/runner2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/test.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/playground/main/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/.ipynb_checkpoints/gettingPubs-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/Untitled.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/addPubs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/eventClass.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/geckodriver.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/gettingPubs.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/googleIt.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/playground/test.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/playground/main/eventClass.py" afterPath="$PROJECT_DIR$/scrapers/eventClass.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/database.py" afterPath="$PROJECT_DIR$/scrapers/database.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/entertainment.py" afterPath="$PROJECT_DIR$/scrapers/entertainment.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py" afterPath="$PROJECT_DIR$/scrapers/eventbrite.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/faceScrape.py" afterPath="$PROJECT_DIR$/scrapers/faceScrape.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/findPubs.py" afterPath="$PROJECT_DIR$/scrapers/findPubs.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/getThosePubs.py" afterPath="$PROJECT_DIR$/scrapers/getThosePubs.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/out.txt" afterPath="$PROJECT_DIR$/scrapers/out.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/pubs.txt" afterPath="$PROJECT_DIR$/scrapers/pubs.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/runner.py" afterPath="$PROJECT_DIR$/scrapers/runner.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scrapers/tryAgain/scrape.py" afterPath="$PROJECT_DIR$/scrapers/scrape.py" />
+    <list default="true" id="292af2a5-ad9d-4113-98d7-2dff4f1b6b81" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -604,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520572489820</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="tidied directories">
+      <created>1520584179698</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1520584179698</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -724,7 +698,8 @@
     <MESSAGE value="changed columns to lon and lat" />
     <MESSAGE value="added some extra pubs" />
     <MESSAGE value="added facebook scraper" />
-    <option name="LAST_COMMIT_MESSAGE" value="added facebook scraper" />
+    <MESSAGE value="tidied directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="tidied directories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
