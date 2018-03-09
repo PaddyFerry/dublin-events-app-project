@@ -29,8 +29,7 @@ in figure 1.
 Fig.1.1
 
 ```
-![Test](../../tree/master/user_manual/user_screenshots/imag1.png =100x200)
-
+<img src="user_screenshots/imag1.png" width="150">
 
 
 ## 4. Changing “Sort by” preference
