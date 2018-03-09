@@ -27,7 +27,8 @@ of the tab you would like to go to.
 c. Tabs are highlighted by a blue bar underneath them. You can see an example of the tabs
 in figure 1.
 Fig.1.1
-![](./user_screenshots/imag1.png =100x20)
+<img src="imag1.png" alt="Drawing" style="width: 200px;"/>
+
 
 ```
 
