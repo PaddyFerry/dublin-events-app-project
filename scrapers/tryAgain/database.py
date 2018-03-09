@@ -59,7 +59,7 @@ class Database(object):
         #     phone = ""
         address = result.find("span", {"class": "_Xbe"}).get_text()
         coords = self.geolocator.geocode(address)
-        coords = (str(coords.latitude), str(coords.longitude))
+        lat, lon = (coords.latitude, coords.longitude)
         image = result.find("img", {"alt": "Image"})
         category = self.fix_category(result.find("span", {"class": "_eMw"}).get_text())
         description = result.find("span", {"class": "_ZCm"}).text if result.find("span", {"class": "_ZCm"}) else category
@@ -69,7 +69,8 @@ class Database(object):
                 image.get("src"),  # image link
                 address,  # address
                 description,  # Description
-                ", ".join(coords))  # co-ordinates
+                lon,
+                lat)  # co-ordinates
 
     @staticmethod
     def get_details():
@@ -88,10 +89,10 @@ class Database(object):
     def add_to_db_venue(self, place):
         """Adds a venue(tuple) to the database raises error if duplicate"""
         cur = self.cnx.cursor()
-        name, rating, category, link, address, description, lat_long = place
+        name, rating, category, link, address, description, lon, lat = place
         try:
             add_place = ("INSERT INTO venuesTest "
-                         "(name, rating, category, link, address, description, lat_long) "
+                         "(name, rating, category, link, address, description, lon, lat) "
                          "VALUES (%s, %s, %s, %s, %s, %s, %s)")
             cur.execute(add_place, ((unidecode(name)).replace("'", ""),
                                     rating,
@@ -99,14 +100,16 @@ class Database(object):
                                     link,
                                     address,
                                     description,
-                                    lat_long))
+                                    lon,
+                                    lat))
             print (add_place, ((unidecode(name)).replace("'", ""),
                                rating,
                                category,
                                link,
                                address,
                                description,
-                               lat_long))
+                               lon,
+                               lat))
             print("ADDED ", name)
             self.cnx.commit()
         except mysql.connector.IntegrityError as err:

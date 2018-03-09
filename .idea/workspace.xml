@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="292af2a5-ad9d-4113-98d7-2dff4f1b6b81" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrapers/tryAgain/scrape.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapers/tryAgain/database.py" afterPath="$PROJECT_DIR$/scrapers/tryAgain/database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapers/tryAgain/entertainment.py" afterPath="$PROJECT_DIR$/scrapers/tryAgain/entertainment.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py" afterPath="$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="2" selection-end-line="182" selection-end-column="35" />
+            <state relative-caret-position="76">
+              <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="48" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -43,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrape.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scrape.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/scrape.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -149,6 +146,7 @@
       <find>sleep</find>
       <find>insert</find>
       <find>select</find>
+      <find>long</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,8 +180,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/eventbrite.py" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/entertainment.py" />
-        <option value="$PROJECT_DIR$/scrapers/tryAgain/database.py" />
         <option value="$PROJECT_DIR$/scrapers/tryAgain/scrape.py" />
+        <option value="$PROJECT_DIR$/scrapers/tryAgain/database.py" />
       </list>
     </option>
   </component>
@@ -556,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520535811672</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added coords and description">
+      <created>1520558505092</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1520558505092</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -575,7 +580,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.88840735" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -637,7 +642,8 @@
     <MESSAGE value="Integrated eventbrite &amp; entertainment scrapers with database class" />
     <MESSAGE value="Integrated eventbrite &amp; entertainment scrapers with database class." />
     <MESSAGE value="Added playground testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added playground testing" />
+    <MESSAGE value="Added coords and description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added coords and description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -974,22 +980,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="2" selection-end-line="182" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/scrape.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/tryAgain/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
