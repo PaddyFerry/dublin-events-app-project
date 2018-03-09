@@ -3,6 +3,7 @@ import eventbrite
 import entertainment
 import threading
 import sys
+import runner
 
 # db = Database("test", "1234", "159.65.84.145", "app")
 # with db:
@@ -21,6 +22,10 @@ if sys.argv[1].lower() == "entertainment":
 elif sys.argv[1].lower() == "eventbrite":
     with db:
         db.run(eventbrite.get_info())
+
+elif sys.argv[1].lower() == "facebook":
+    with db:
+        db.run(runner.run())
 
 
 # threading.Thread(target=db.run, args=(eventbrite.get_info(),)).start()

@@ -9,11 +9,6 @@ import eventbrite
 import runner
 
 
-
-
-
-
-
 class Database(object):
     """Class for taking scraper returns and working with the database accordingly"""
     def __init__(self, user, password, host, database):
@@ -179,16 +174,16 @@ class Database(object):
             output = ""
             try:
                 self.check_add_event(event)
-            except (UnicodeEncodeError, mysql.connector.DatabaseError) as err:
+            except (UnicodeEncodeError, mysql.connector.DatabaseError, ValueError, TypeError) as err:
                 output += "Error : {}".format(err) + "\n"
             output += "________________________________________"
             print(output)
 
 
-db = Database("test", "1234", "159.65.84.145", "app")
-with db:
-#     # print db.google_it("the great wood")
-    db.run(runner.run())
+# db = Database("test", "1234", "159.65.84.145", "app")
+# with db:
+# #     # print db.google_it("the great wood")
+#     db.run(foo())
     # for event in entertainment.get_info():
 #         try:
 #             db.check_add_event(event)
