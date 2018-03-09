@@ -26,7 +26,7 @@ b. You can also swipe your finger from left to right or right to left depending 
 of the tab you would like to go to.
 c. Tabs are highlighted by a blue bar underneath them. You can see an example of the tabs
 in figure 1.
-Fig.1.1 ![](/user_screenshots/imag1.png =100x20)
+Fig.1.1 ![](user_screenshots/imag1.png =100x20)
 
 ```
 
