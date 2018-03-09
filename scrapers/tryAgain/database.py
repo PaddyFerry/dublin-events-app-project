@@ -6,6 +6,11 @@ import mysql.connector
 import entertainment
 from time import sleep
 import eventbrite
+import runner
+
+
+
+
 
 
 
@@ -180,10 +185,10 @@ class Database(object):
             print(output)
 
 
-# db = Database("test", "1234", "159.65.84.145", "app")
-# with db:
-# #     # print db.google_it("the great wood")
-#     db.run(eventbrite.get_info())
+db = Database("test", "1234", "159.65.84.145", "app")
+with db:
+#     # print db.google_it("the great wood")
+    db.run(runner.run())
     # for event in entertainment.get_info():
 #         try:
 #             db.check_add_event(event)

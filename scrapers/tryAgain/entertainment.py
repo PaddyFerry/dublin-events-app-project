@@ -77,7 +77,6 @@ def get_info():
         else:
             desc = ""
         link = ""
-        print("ENTERTAINMENT")
         yield name.text, location.text, tickets, desc, datetime, link
 
 

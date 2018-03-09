@@ -9,15 +9,6 @@ sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 
 def main():
-    conn = sqlite3.connect('event.db')
-    conn.text_factory = str
-    cur = conn.cursor()
-    database = SqliteDB(cur)
-    try:
-        database.create_db()
-    except:
-        pass
-
 
     face = FacebookScraper(facebook.GraphAPI(access_token="""EAANzGl7D69MBAEzqZB5n2oAFSxzf6YrY3bDgJoXSdmNNn73v4
                                                             mtwCZCw6qQmuRY78n3QZAmBuyMRePFo4LJCdOE3mCHVcDOZB0ot
