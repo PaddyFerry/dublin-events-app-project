@@ -29,7 +29,7 @@ in figure 1.
 Fig.1.1
 
 ```
-![Test](./user_screenshots/imag1.png =100x200)
+![Img1](user_screenshots/imag1.png =100x200)
 
 
 
