@@ -121,9 +121,9 @@ a. To get more information about a /venue that you have added navigate to the fa
 tab by pressing on the tab or swiping in the correct direction.
 b. Once you are in the favourites tab drag your finger from the middle of the screen and
 down to refresh the view if the item you have added is not there.
+c. Click on the more info button
+d. This will show you all the events for that specific venu that you have favourited.
 ```
-### c. Click on the more info button
 
-### d. This will show you all the events for that specific venu that you have favourited.
 
 
