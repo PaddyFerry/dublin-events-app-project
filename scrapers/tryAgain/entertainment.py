@@ -45,7 +45,7 @@ def get_links():
     page_raw = requests.get(my_url)
     page_html = Soup(page_raw.content, 'html5lib')
     next_pages = page_html.find("span", {"class": "paginglinks"})
-    for page in next_pages.find_all("a")[:3]:
+    for page in next_pages.find_all("a")[:2]:
         for link in page_html.find_all("a", {"class": "blcklink"})[1:]:
             # print "http://www.entertainment.ie" + link.get('href')
             yield "http://www.entertainment.ie" + link.get('href')
@@ -77,6 +77,7 @@ def get_info():
         else:
             desc = ""
         link = ""
+        print("ENTERTAINMENT")
         yield name.text, location.text, tickets, desc, datetime, link
 
 

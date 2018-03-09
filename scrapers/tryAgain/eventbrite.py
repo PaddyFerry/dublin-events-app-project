@@ -63,10 +63,11 @@ def get_details(url):
     return name, location, tickets, desc, datetime, piclink
 
 
-
 def get_info():
     l = get_all_links(urls[1:3])
+
     for link in l:
+        print("EVENTBRITE")
         try:
             yield get_details(link)
         except:

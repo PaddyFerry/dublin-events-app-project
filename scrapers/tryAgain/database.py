@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup as Soup
 from unidecode import unidecode
+from geopy.geocoders import GoogleV3
 import requests as re
 import mysql.connector
 import entertainment
@@ -15,6 +16,7 @@ class Database(object):
         self.password = password
         self.host = host
         self.database = database
+        self.geolocator = GoogleV3(api_key="AIzaSyB1PDKub0qXbZae6x8VvhLze15Wf917V9w", timeout=20)
 
     def __enter__(self):
         self.cnx = mysql.connector.connect(user=self.user, password=self.password,
@@ -24,6 +26,7 @@ class Database(object):
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.cnx.close()
         print("Finished with database")
+
 
     @staticmethod
     def select(query, column, table):
@@ -54,12 +57,19 @@ class Database(object):
         #     phone = result.find("span", {"data-dtype": "d3ifr"}).get_text()
         # else:
         #     phone = ""
+        address = result.find("span", {"class": "_Xbe"}).get_text()
+        coords = self.geolocator.geocode(address)
+        coords = (str(coords.latitude), str(coords.longitude))
         image = result.find("img", {"alt": "Image"})
+        category = self.fix_category(result.find("span", {"class": "_eMw"}).get_text())
+        description = result.find("span", {"class": "_ZCm"}).text if result.find("span", {"class": "_ZCm"}) else category
         return (result.find("span", {'class': None}).get_text(),  # name
                 result.find("span", {"class": "rtng"}).get_text(),  # rating
-                self.fix_category(result.find("span", {"class": "_eMw"}).get_text()),  # category
+                category,  # category
                 image.get("src"),  # image link
-                result.find("span", {"class": "_Xbe"}).get_text())  # address
+                address,  # address
+                description,  # Description
+                ", ".join(coords))  # co-ordinates
 
     @staticmethod
     def get_details():
@@ -78,13 +88,25 @@ class Database(object):
     def add_to_db_venue(self, place):
         """Adds a venue(tuple) to the database raises error if duplicate"""
         cur = self.cnx.cursor()
-        name, rating, category, link, address = place
+        name, rating, category, link, address, description, lat_long = place
         try:
             add_place = ("INSERT INTO venuesTest "
-                         "(name, rating, category, link, address) "
-                         "VALUES (%s, %s, %s, %s, %s)")
-            cur.execute(add_place, ((unidecode(name)).replace("'", ""), rating, category, link, address))
-            print (add_place, ((unidecode(name)).replace("'", ""), rating, category, link, address))
+                         "(name, rating, category, link, address, description, lat_long) "
+                         "VALUES (%s, %s, %s, %s, %s, %s, %s)")
+            cur.execute(add_place, ((unidecode(name)).replace("'", ""),
+                                    rating,
+                                    category,
+                                    link,
+                                    address,
+                                    description,
+                                    lat_long))
+            print (add_place, ((unidecode(name)).replace("'", ""),
+                               rating,
+                               category,
+                               link,
+                               address,
+                               description,
+                               lat_long))
             print("ADDED ", name)
             self.cnx.commit()
         except mysql.connector.IntegrityError as err:
@@ -95,7 +117,7 @@ class Database(object):
         sel = "SELECT link FROM venuesTest WHERE name = \'{}\';".format(venue_name.replace("'", ""))
         cur = self.cnx.cursor()
         cur.execute(sel)
-        print(sel)
+        # print(sel)
         i_link = "https://www.irishcentral.com/uploads/article/106499/cropped_MI_Guinness_pints_done_iStock.jpg"
         for res in cur:
             i_link = (res[0])
@@ -112,7 +134,7 @@ class Database(object):
             add_event = ("INSERT INTO eventsTest "
                          "(ename, location, tickets, description, datetime, elink) "
                          "VALUES (%s, %s, %s, %s, %s, %s)")
-            print(add_event, (name, (unidecode(location)).replace("'", ""), tickets, description, datetime))
+            # print(add_event, (name, (unidecode(location)).replace("'", ""), tickets, description, datetime))
             cur.execute(add_event, (name, (unidecode(location)).replace("'", ""), tickets, description, datetime, link))
             print("ADDED ", name)
             self.cnx.commit()
@@ -144,16 +166,28 @@ class Database(object):
         else:
             self.add_to_db_event(event)
 
+    def run(self, scraper):
+        for event in scraper:
+            output = ""
+            try:
+                self.check_add_event(event)
+            except (UnicodeEncodeError, mysql.connector.DatabaseError) as err:
+                output += "Error : {}".format(err) + "\n"
+            output += "________________________________________"
+            print(output)
 
-db = Database("test", "1234", "159.65.84.145", "app")
-with db:
-    for event in entertainment.get_info():
-        try:
-            db.check_add_event(event)
-        except UnicodeEncodeError as err:
-            print("Error : {}".format(err))
-            print("ERROR WITH", event)
-        print ("________________________________________")
+
+# db = Database("test", "1234", "159.65.84.145", "app")
+# with db:
+#     # print db.google_it("the great wood")
+#     db.run(eventbrite.get_info())
+    # for event in entertainment.get_info():
+#         try:
+#             db.check_add_event(event)
+#         except UnicodeEncodeError as err:
+#             print("Error : {}".format(err))
+#             print("ERROR WITH", event)
+#         print ("________________________________________")
 #     db.check_add_venue("The Grand Social")
 # db = Database("test", "1234", "159.65.84.145", "app")
 # with db:
