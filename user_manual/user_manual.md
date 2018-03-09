@@ -43,7 +43,7 @@ c. Once you press the button the view will be changed based on the clicked optio
 d. In figure 1.2 you can see the expanded view of the menu.
 ​ Fig.1.2
 ```
-<img src="user_screenshots/imagE2.png" width="150">
+<img src="user_screenshots/image2.png" width="150">
 
 
 ## 5. Getting events for a venue
@@ -54,9 +54,9 @@ b. Click on the events button.
 c. This will show you all of the events occurring in that venue.
 d. In figure 1.3 we see an example of a single venues events listed
 ​ Fig.1.3
+```
 <img src="user_screenshots/img4.png" width="150">
 
-```
 ## 6. Get venue information from event
 
 ```
@@ -79,9 +79,10 @@ g. You can see an example of a search query in figure 1.
 
 ```
 ​ Fig.1.4
+```
 <img src="user_screenshots/img7.png" width="150">
 
-```
+
 ## 8. Adding event/venue to favourites
 
 ```
@@ -96,9 +97,10 @@ e. An example of the expanded panel and the favourites button can be seen in fig
 
 ```
 ​ Fig1.5
+```
 <img src="user_screenshots/img3.png" width="150">
 
-```
+
 ## 9. Viewing favourites
 
 ```
@@ -116,9 +118,11 @@ venue and 2 buttons.
 ```
 ​ Fig.1.6
 
+```
 <img src="user_screenshots/img6.png" width="150">
 
-```
+
+
 ## 10. Removing favourite item
 
 ```
