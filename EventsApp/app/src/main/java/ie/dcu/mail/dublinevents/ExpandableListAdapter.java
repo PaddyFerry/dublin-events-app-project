@@ -1,13 +1,18 @@
 package ie.dcu.mail.dublinevents;
 
 import java.util.ArrayList;
+import java.util.zip.Inflater;
+
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 
 @SuppressWarnings("unchecked")
@@ -40,35 +45,80 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getChildView(final int groupPosition, final int childPosition,
-                             final boolean isLastChild, View convertView, ViewGroup parent) {
+                             final boolean isLastChild, View convertView, final ViewGroup parent) {
 
         final ArrayList<String> parentGroup = (ArrayList<String>) groupedItem.get(groupPosition);
         tempChild = (ArrayList<String>) Childtem.get(groupPosition);
         TextView text;
 
-        if (convertView == null) {
-            convertView = minflater.inflate(R.layout.list_item, null);
+        if (parentGroup.get(4).equals("event")) {
+            if (convertView == null) {
+                convertView = minflater.inflate(R.layout.ven_list_item, null);
+            }
+
+            text = convertView.findViewById(R.id.eveDesc);
+            text.setText(tempChild.get(childPosition));
+
+            final Button eventInfoButt = convertView.findViewById(R.id.eventInfo);
+            eventInfoButt.setText("View Venue");
+            eventInfoButt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    String message = parentGroup.get(1).substring(10,parentGroup.get(1).length());
+                    Intent intent = new Intent(Main2Activity.getContext(),MoreInfo.class);
+                    intent.putExtra("name",message);
+                    Main2Activity.getContext().startActivity(intent);
+
+                }
+            });
+        }
+        else{
+
+            if (convertView == null) {
+                convertView = minflater.inflate(R.layout.ven_list_item, null);
+            }
+
+            text = convertView.findViewById(R.id.eveDesc);
+            text.setText(tempChild.get(childPosition));
+
+
+            final Button eventInfoButt = convertView.findViewById(R.id.eventInfo);
+            eventInfoButt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    String message = parentGroup.get(0);
+                    Intent intent = new Intent(Main2Activity.getContext(),EventInfo.class);
+                    intent.putExtra("name",message);
+                    Main2Activity.getContext().startActivity(intent);
+
+                }
+            });
+
+
         }
 
-        text = convertView.findViewById(R.id.lstitem);
-        text.setText(tempChild.get(childPosition));
+
         final Button button = convertView.findViewById(R.id.favourite);
-        final View conv = convertView;
 
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                addProduct(parentGroup.get(0),parentGroup.get(1),parentGroup.get(2),conv);
+                addProduct(parentGroup.get(0),parentGroup.get(1),parentGroup.get(2),parentGroup.get(4),parentGroup.get(3));
             }
         });
+
+
+
         return convertView;
     }
 
 
-    public void addProduct(String a,String b,String c,View v){
-        SqliteDBHandler dbHandler = new SqliteDBHandler(MainActivity.getContext(),null,null,10);
-        dbHandler.addVenue(a,b,c);
+    public void addProduct(String name,String loc,String date,String type,String link ){
+        SqliteDBHandler dbHandler = new SqliteDBHandler(Main2Activity.getContext(),null,null,14);
+        dbHandler.addVenue(name,loc,date,type,link);
     }
 
     @Override
@@ -110,16 +160,20 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = minflater.inflate(R.layout.list_group, null);
         }
 
+        ImageView eveImage = convertView.findViewById(R.id.eventImage);
+
         text = convertView.findViewById(R.id.eventName);
         text.setText(tmpGroup.get(0));
         text = convertView.findViewById(R.id.eventDate);
         text.setText(tmpGroup.get(1));
         text = convertView.findViewById(R.id.eventLocation);
         text.setText(tmpGroup.get(2));
-        if (tmpGroup.size() > 3)
-        {
+        Picasso.with(Main2Activity.getContext()).load(tmpGroup.get(3)).into(eveImage);
+
+
+        if (tmpGroup.size() > 5) {
             text = convertView.findViewById(R.id.rating);
-            text.setText(tmpGroup.get(3));
+            text.setText(tmpGroup.get(5));
         }
 
         return convertView;
@@ -132,7 +186,5 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int groupPosition, int childPosition) {
         return true;
     }
-
-
 
 }

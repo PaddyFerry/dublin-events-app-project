@@ -1,19 +1,18 @@
 package ie.dcu.mail.dublinevents;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
+
 
 public class Main2Activity extends AppCompatActivity {
+
 
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
@@ -21,13 +20,14 @@ public class Main2Activity extends AppCompatActivity {
     public static Context mContext;
     public SqliteDBHandler dbHandler;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         mContext = getApplicationContext();
 
-        dbHandler = new SqliteDBHandler(this, null, null, 11);
+        dbHandler = new SqliteDBHandler(this, null, null, 14);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -35,7 +35,10 @@ public class Main2Activity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-        mViewPager.setOffscreenPageLimit(3);
+
+        //Limit page load to 4
+        mViewPager.setOffscreenPageLimit(4);
+        //Find
         TabLayout tabLayout = findViewById(R.id.tabs);
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
@@ -43,11 +46,6 @@ public class Main2Activity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        return true;
-    }
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -105,23 +103,6 @@ public class Main2Activity extends AppCompatActivity {
 
     }
 
-    void setAdapter(int position){
-        PagerAdapter pagerAdapter = new PagerAdapter() {
-            @Override
-            public int getCount() {
-                return 0;
-            }
-
-            @Override
-            public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-                return false;
-            }
-        };
-        mViewPager.setAdapter(pagerAdapter);
-        mViewPager.setCurrentItem(position);
-        pagerAdapter.notifyDataSetChanged();
-
-    }
 
     public static Context getContext() {
         return mContext;

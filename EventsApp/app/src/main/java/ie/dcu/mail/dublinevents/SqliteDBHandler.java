@@ -14,13 +14,16 @@ import java.util.ArrayList;
 
 public class SqliteDBHandler extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 10;
+    private static final int DATABASE_VERSION = 14;
     private static final String DATABASE_NAME = "favourites.db";
-    public static final String TABLE_VENUES = "venues";
-    public static final String VENUE_ID = "_id";
-    public static final String VENUE_NAME = "name";
-    public static final String VENUE_LOCATION = "location";
-    public static final String VENUE_CATEGORY = "category";
+    private static final String TABLE_VENUES = "venues";
+    private static final String VENUE_ID = "_id";
+    private static final String VENUE_NAME = "name";
+    private static final String VENUE_LOCATION = "location";
+    private static final String VENUE_CATEGORY = "category";
+    private static final String VENUE_LINK = "link";
+    private static final String VENUE_TYPE = "type";
+
 
     /*This class is primarily in charge of handling the favourites sqlite database.
     * It will save all the information that we will use to display favourites
@@ -36,7 +39,9 @@ public class SqliteDBHandler extends SQLiteOpenHelper {
                 + VENUE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + VENUE_NAME + " TEXT, "
                 + VENUE_LOCATION + " TEXT, "
-                + VENUE_CATEGORY + " TEXT "
+                + VENUE_CATEGORY + " TEXT, "
+                + VENUE_LINK + " TEXT, "
+                + VENUE_TYPE + " TEXT "
                 + ");";
         db.execSQL(query);
     }
@@ -49,7 +54,7 @@ public class SqliteDBHandler extends SQLiteOpenHelper {
 
 
     //add Venues
-    public void addVenue(String name,String location,String category){
+    public void addVenue(String name,String location,String category,String type,String link){
 
         SQLiteDatabase db = getWritableDatabase();
         String namer = name.replaceAll("'","").replaceAll("\"","\"\"");
@@ -61,15 +66,24 @@ public class SqliteDBHandler extends SQLiteOpenHelper {
             values.put(VENUE_NAME, namer);
             values.put(VENUE_LOCATION, location);
             values.put(VENUE_CATEGORY, category);
+            values.put(VENUE_LINK, link);
+            values.put(VENUE_TYPE, type);
             db.insert(TABLE_VENUES, null, values);
-            Toast.makeText(MainActivity.getContext(),"Added To Favourites",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Main2Activity.getContext(),"Added To Favourites",Toast.LENGTH_SHORT).show();
         }
         else {
-            Toast.makeText(MainActivity.getContext(), name+" already in favourites", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Main2Activity.getContext(), name+" already in favourites", Toast.LENGTH_SHORT).show();
         }
 
         db.close();
         resultSet.close();
+    }
+
+    public void deleteVenue(String name){
+
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_VENUES+ " WHERE "+ VENUE_NAME+" = '" + name+"';");
+
     }
 
     public ArrayList<Object> databaseToList(){
@@ -88,6 +102,8 @@ public class SqliteDBHandler extends SQLiteOpenHelper {
                 dbString.add(cursor.getString(cursor.getColumnIndex("name")));
                 dbString.add(cursor.getString(cursor.getColumnIndex("location")));
                 dbString.add(cursor.getString(cursor.getColumnIndex("category")));
+                dbString.add(cursor.getString(cursor.getColumnIndex("link")));
+                dbString.add(cursor.getString(cursor.getColumnIndex("type")));
             }
 
             listOfLists.add(dbString);
