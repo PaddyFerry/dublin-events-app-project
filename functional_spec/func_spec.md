@@ -333,7 +333,7 @@ pleasing way.
 # 5 High Level Design
 
 ### 5.1 Data Flow Diagram ​ 1 ​
-<img src="func_images/img2.png">
+<img src="func_images/img2.PNG">
 
 **Fig 5.1-DFD**
 
@@ -349,7 +349,7 @@ can choose to view it.
 
 
 # 6 Preliminary Schedule
-<img src="func_images/img3.png">
+<img src="func_images/img3.PNG">
 
 **Fig 6.1-Gantt Chart
 Functional Spec -** ​We hope to complete the functional specification before the due
