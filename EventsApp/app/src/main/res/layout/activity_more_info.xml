@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="ie.dcu.mail.dublinevents.MoreInfo"
+    tools:showIn="@layout/activity_more_info">
+
+
+    <ExpandableListView
+        android:id="@+id/explistView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchView"
+        android:divider="#000"
+        android:footerDividersEnabled="true">
+    </ExpandableListView>
+
+</android.widget.RelativeLayout>
