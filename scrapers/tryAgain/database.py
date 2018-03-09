@@ -93,7 +93,7 @@ class Database(object):
         try:
             add_place = ("INSERT INTO venuesTest "
                          "(name, rating, category, link, address, description, lon, lat) "
-                         "VALUES (%s, %s, %s, %s, %s, %s, %s)")
+                         "VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
             cur.execute(add_place, ((unidecode(name)).replace("'", ""),
                                     rating,
                                     category,
@@ -180,10 +180,10 @@ class Database(object):
             print(output)
 
 
-# db = Database("test", "1234", "159.65.84.145", "app")
-# with db:
+db = Database("test", "1234", "159.65.84.145", "app")
+with db:
 #     # print db.google_it("the great wood")
-#     db.run(eventbrite.get_info())
+    db.run(eventbrite.get_info())
     # for event in entertainment.get_info():
 #         try:
 #             db.check_add_event(event)
