@@ -24,7 +24,6 @@ public class MoreInfo extends AppCompatActivity {
         expandbleLis.setGroupIndicator(null);
         expandbleLis.setClickable(true);
         //Download the info again and display the info
-        Toast.makeText(Main2Activity.getContext(),name,Toast.LENGTH_SHORT).show();
         Downloader d = new Downloader(this, "http://159.65.84.145/moreInfo.php?name="+name, expandbleLis, "venue");
         d.execute();
     }
