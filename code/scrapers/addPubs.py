@@ -1,0 +1,5 @@
+import database
+
+with open("pubs.txt", "r") as f:
+    for line in f.readlines():
+        print line.strip()

@@ -7,7 +7,6 @@ def get_date_time(line):
         time = [deat for deat in line.split(" ") if "am" in deat or "pm" in deat][0] #XX.XXam/pm
         if "pm" in time:
             time = time[:-2]
-            # hour, minute = str(int(time[:-2].split(".")[0])+12), str(time[:-2].split(".")[1])
             hour, minute = time.split(".")
             hour = int(hour) + 12
             if int(hour) > 23:
@@ -16,7 +15,7 @@ def get_date_time(line):
             time = time[:-2]
             hour, minute = (time.split("."))
             if int(hour) == 12:
-                hour = int(hour) -12
+                hour = int(hour) - 12
     else:
         hour, minute = ("", "")
     if "-" in line:
@@ -47,10 +46,8 @@ def get_links():
     next_pages = page_html.find("span", {"class": "paginglinks"})
     for page in next_pages.find_all("a")[:2]:
         for link in page_html.find_all("a", {"class": "blcklink"})[1:]:
-            # print "http://www.entertainment.ie" + link.get('href')
             yield "http://www.entertainment.ie" + link.get('href')
-        print("______________________________________________")
-        my_url = "http://entertainment.ie" + page.get("href").replace(" ", "%20") # page_html.find("a", {"title": "Next page of events"}).get("href")
+        my_url = "http://entertainment.ie" + page.get("href").replace(" ", "%20")
         page_raw = requests.get(my_url)
         page_html = Soup(page_raw.content, 'html5lib')
 

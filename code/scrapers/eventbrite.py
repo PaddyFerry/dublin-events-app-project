@@ -30,7 +30,7 @@ def get_event_link(url):
 
 
 def get_next_pages(url):
-    return [(url+"?crt=regular&page="+str(i)+"&sort=best") for i in range(2, 4)]
+    return [(url+"?crt=regular&page="+str(i)+"&sort=best") for i in range(2, 5)]
 
 
 def get_all_links(bigList):
@@ -64,7 +64,7 @@ def get_details(url):
 
 
 def get_info():
-    l = get_all_links(urls[1:3])
+    l = get_all_links(urls[1:5])
 
     for link in l:
         try:
