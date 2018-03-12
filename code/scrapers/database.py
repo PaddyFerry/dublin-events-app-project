@@ -153,6 +153,7 @@ class Database(object):
 
     def run(self, scraper):
         for event in scraper:
+            self.output += scraper.__name__ + "\n"
             try:
                 self.check_add_event(event)
             except (UnicodeEncodeError, mysql.connector.DatabaseError, ValueError, TypeError) as err:

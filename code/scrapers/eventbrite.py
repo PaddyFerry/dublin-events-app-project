@@ -63,7 +63,7 @@ def get_details(url):
     return name, location, tickets, desc, datetime, piclink
 
 
-def get_info():
+def get_info_eventbrite():
     l = get_all_links(urls[1:5])
 
     for link in l:
