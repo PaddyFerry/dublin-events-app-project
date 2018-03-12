@@ -52,7 +52,7 @@ def get_links():
         page_html = Soup(page_raw.content, 'html5lib')
 
 
-def get_info():
+def get_info_entertainment():
     for link in get_links():
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
