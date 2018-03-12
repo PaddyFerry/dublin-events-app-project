@@ -17,16 +17,16 @@ class Database(object):
         self.host = host
         self.database = database
         self.geolocator = GoogleV3(api_key="AIzaSyB1PDKub0qXbZae6x8VvhLze15Wf917V9w", timeout=20)
+        self.output = ""
 
     def __enter__(self):
         self.cnx = mysql.connector.connect(user=self.user, password=self.password,
                                            host=self.host, database=self.database)
-        print("Connected to database")
+        print "Connected to database"
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.cnx.close()
-        print("Finished with database")
-
+        print ("Finished with database")
 
     @staticmethod
     def select(query, column, table):
@@ -36,9 +36,9 @@ class Database(object):
 
     def check_db_venue(self, place):
         """Checks the database for the composite key of venue ie.(name, address)"""
-        print "Checking database for " + place
+        self.output += "Checking database for {}".format(place) + "\n"
         cur = self.cnx.cursor()
-        name = self.select(place, "name", "venuesTest")
+        name = self.select(place.strip(), "name", "venuesTest")
         cur.execute(name)
         name_res = len([l for l in cur])
         cur.close()
@@ -53,28 +53,21 @@ class Database(object):
         raw = re.get(url + place + "+dublin" + "&cr=IE", headers=headers)
         html = Soup(raw.content, "html5lib")
         result = html.find("div", {"class": "_OKe"})
-        # if result.find("span", {"data-dtype": "d3ifr"}):
-        #     phone = result.find("span", {"data-dtype": "d3ifr"}).get_text()
-        # else:
-        #     phone = ""
         address = result.find("span", {"class": "_Xbe"}).get_text()
         coords = self.geolocator.geocode(address)
         lat, lon = (coords.latitude, coords.longitude)
         image = result.find("img", {"alt": "Image"})
         category = self.fix_category(result.find("span", {"class": "_eMw"}).get_text())
         description = result.find("span", {"class": "_ZCm"}).text if result.find("span", {"class": "_ZCm"}) else category
+        rating = result.find("span", {"class": "rtng"}).get_text() if result.find("span", {"class": "rtng"}) else ""
         return (result.find("span", {'class': None}).get_text(),  # name
-                result.find("span", {"class": "rtng"}).get_text(),  # rating
+                rating,  # rating
                 category,  # category
                 image.get("src"),  # image link
                 address,  # address
                 description,  # Description
                 lon,
                 lat)  # co-ordinates
-
-    @staticmethod
-    def get_details():
-        pass
 
     @staticmethod
     def fix_category(cate):
@@ -102,25 +95,16 @@ class Database(object):
                                     description,
                                     lon,
                                     lat))
-            print (add_place, ((unidecode(name)).replace("'", ""),
-                               rating,
-                               category,
-                               link,
-                               address,
-                               description,
-                               lon,
-                               lat))
-            print("ADDED ", name)
+            self.output += ("ADDED {} to database".format(name)) + "\n"
             self.cnx.commit()
         except mysql.connector.IntegrityError as err:
-            print("Error: {}".format(err))
+            self.output += ("Error: {}".format(err)) + "\n"
         cur.close()
 
     def find_image(self, venue_name):
         sel = "SELECT link FROM venuesTest WHERE name = \'{}\';".format(venue_name.replace("'", ""))
         cur = self.cnx.cursor()
         cur.execute(sel)
-        # print(sel)
         i_link = "https://www.irishcentral.com/uploads/article/106499/cropped_MI_Guinness_pints_done_iStock.jpg"
         for res in cur:
             i_link = (res[0])
@@ -137,12 +121,11 @@ class Database(object):
             add_event = ("INSERT INTO eventsTest "
                          "(ename, location, tickets, description, datetime, elink) "
                          "VALUES (%s, %s, %s, %s, %s, %s)")
-            # print(add_event, (name, (unidecode(location)).replace("'", ""), tickets, description, datetime))
             cur.execute(add_event, (name, (unidecode(location)).replace("'", ""), tickets, description, datetime, link))
-            print("ADDED ", name)
+            self.output += ("ADDED {}".format(name)) + "\n"
             self.cnx.commit()
         except mysql.connector.IntegrityError as err:
-            print("Error: {}".format(err))
+            self.output += ("Error: {}".format(err)) +"\n"
         cur.close()
 
     def check_add_venue(self, place):
@@ -151,18 +134,17 @@ class Database(object):
             try:
                 venue_details = self.google_it(place)
                 self.add_to_db_venue(venue_details)
-                print("{} added to DB".format(place))
+                self.output += ("{} added to DB".format(place)) + "\n"
                 return venue_details[0]
             except AttributeError:
-                print("Not enough info on {}".format(place))
+                self.output +=("Not enough info on {}".format(place)) + "\n"
                 return
         else:
-            print("{} already in DB".format(place))
+            self.output += ("{} already in DB".format(place)) + "\n"
             return place
 
     def check_add_event(self, event):
         """Adds an event to the events table and the venue to the venue table if it doesn't already exist there"""
-        # print(event[1])
         name = self.check_add_venue(event[1])
         if name:
             self.add_to_db_event((event[0], name, event[2], event[3], event[4], event[5]))
@@ -171,33 +153,13 @@ class Database(object):
 
     def run(self, scraper):
         for event in scraper:
-            output = ""
             try:
                 self.check_add_event(event)
             except (UnicodeEncodeError, mysql.connector.DatabaseError, ValueError, TypeError) as err:
-                output += "Error : {}".format(err) + "\n"
-            output += "________________________________________"
-            print(output)
+                self.output += "Error : {}".format(err) + "\n"
+            self.output += "________________________________________\n"
+            print(self.output)
+            self.output = ""
 
 
-# db = Database("test", "1234", "159.65.84.145", "app")
-# with db:
-# #     # print db.google_it("the great wood")
-#     db.run(foo())
-    # for event in entertainment.get_info():
-#         try:
-#             db.check_add_event(event)
-#         except UnicodeEncodeError as err:
-#             print("Error : {}".format(err))
-#             print("ERROR WITH", event)
-#         print ("________________________________________")
-#     db.check_add_venue("The Grand Social")
-# db = Database("test", "1234", "159.65.84.145", "app")
-# with db:
-#     for event in eventbrite.get_info():
-#         try:
-#             db.check_add_event(event)
-#         except (UnicodeEncodeError, mysql.connector.DatabaseError) as err:
-#             print("Error : {}".format(err))
-#             print("ERROR WITH", event)
-#         print ("________________________________________")
+
